@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Sora:wght@100..800&display=swap"
+  rel="stylesheet"
+/>
+<link href="./output.css" rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./script.js"></script>
+<html>
+  <body>
+    <div
+      id="header"
+      class="w-full fixed bg-white z-10 px-8 py-5 flex items-center h-[100px]"
+    >
+      <div class="flex items-center">
+        <img src="./assets/image/logo.png" />
+        <img class="-translate-x-6" src="./assets/image/logo-text.png" />
+      </div>
+      <div class="flex gap-[38px] grow">
+        <div class="menu-item">
+          <a href="./index.html" >Trang chủ</a>
+        </div>  
+        <div class="menu-item">
+          <a href="./policy.html" >Chính sách bảo mật</a>
+        </div>
+        <div class="menu-item">
+          <a href="./terms.html">Điều khoản sử dụng</a>
+        </div>
+      </div>
+
+    </div>
+    <div
+      id="banner"
+      class="grid grid-cols-2 h-[801px] bg-[#F4F6FB] min-h-screen"
+    >
+      <div id="banner-left" class="grid place-content-center px-[66px]">
+        <div class="flex flex-col gap-3 w-[595px]">
+          <div class="flex gap-3">
+            <img src="./assets/icon/check-circle.svg" />
+            <div
+              class="text-[#118AC5] opacity-70 leading-[28px] tracking-[1px]"
+            >
+              SINCE 2024
+            </div>
+          </div>
+          <div class="text-[#203E78] text-[64px] leading-[81px]">
+            Giải pháp nhanh, cuộc sống xanh.
+          </div>
+          <div class="mb-[27px] text-sub">
+            Một giải pháp mới cho việc dọn dẹp nhà cửa của bạn.
+          </div>
+        </div>
+        <button class="btn-primary w-fit">Trải nghiệm ngay</button>
+      </div>
+      <div id="banner-right" class="rounded-bl-[350px] bg-blue-3 relative">
+        <div class="rounded-bl-[350px] w-full h-full relative overflow-hidden">
+          <img
+            class="absolute bottom-0"
+            src="./assets/image/waitress-banner.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <div class="icon-block absolute top-[204px] left-[25px]">
+            <img src="./assets/icon/Shield-Done.svg" alt="" />
+          </div>
+          <div
+            class="icon-block absolute top-[270px] 2xl:left-[450px] right-0 pr-2"
+          >
+            <img src="./assets/icon/Setting.svg" />
+            <div>
+              <div class="font-montserrat-alternates font-bold text-[#373737]">
+                Chất lượng
+              </div>
+              <div class="text-sub text-[15px]">Dẫn đầu thị trường</div>
+            </div>
+          </div>
+          <div class="icon-block absolute bottom-[75px] left-[-69px]">
+            <img src="./assets/icon/Activity.svg" />
+            <div>
+              <div
+                class="font-montserrat-alternates font-semibold text-[40px] leading-[55px] text-[#373737]"
+              >
+                Số 1
+              </div>
+              <div class="text-sub text-base">Dịch vụ dọn dẹp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="reason" class="grid grid-cols-2 section gap-10">
+      <div id="reason-left">
+        <div class="relative py-10 h-[615px]">
+          <div class="image-box absolute left-[110px]">
+            <img src="assets/image/home-2 1.png" />
+          </div>
+          <div class="image-box absolute top-[97px] left-0">
+            <img src="assets/image/reason-1.png" />
+          </div>
+          <div class="image-box absolute bottom-[41px] right-[97px]">
+            <img src="assets/image/home-3 1.png" />
+          </div>
+        </div>
+      </div>
+      <div id="reason-right">
+        <div class="mb-[60px] text-[#282A2E] text-[48px] leading-[59px]">
+          Lý do bạn nên chọn chúng tôi?
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-5">
+            <div class="btn-icon">
+              <img src="./assets/icon/check.svg" />
+            </div>
+            <div>
+              <div class="text-title mb-3">Đặt lịch nhanh chóng</div>
+              <div class="text-sub-18">
+                Thao tác 60 giây trên ứng dụng, có ngay người nhận việc sau 60
+                phút
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="btn-icon">
+              <img src="./assets/icon/check.svg" />
+            </div>
+            <div>
+              <div class="text-title mb-3">Giá cả rõ ràng</div>
+              <div class="text-sub-18">
+                Giá dịch vụ được hiển thị rõ ràng trên ứng dụng. Bạn không phải
+                trả thêm bất kỳ khoản chi phí nào.
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <div class="btn-icon">
+              <img src="./assets/icon/check.svg" />
+            </div>
+            <div>
+              <div class="text-title mb-3">Đa dạng dịch vụ</div>
+              <div class="text-sub-18">
+                Với 04 dịch vụ tiện ích, DeliTask sẵn sàng hỗ trợ mọi nhu cầu
+                việc nhà của bạn.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="section">
+      <div class="text-black text-[70px] leading-[64px] text-center mb-[74px]">
+        Các dịch vụ của DeliTask
+      </div>
+      <div class="grid grid-cols-4 gap-[22px]">
+        <div class="service-card">
+          <img src="./assets/icon/Housekeeping.svg" />
+          <div class="service-card-title">Giúp việc nhà theo giờ</div>
+          <div class="service-card-sub">
+            Giúp việc nhà theo giờ sẽ là giải pháp hợp lý cho mọi gia đình!
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="./assets/icon/Interior.svg" />
+          <div class="service-card-title">Vệ sinh Sofa - Rèm Đệm - Thảm</div>
+          <div class="service-card-sub">
+            Bảo an toàn cho không gian sống của gia đình luôn sạch sẽ, an toàn.
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="./assets/icon/Add Basket.svg" />
+          <div class="service-card-title">Đi chợ</div>
+          <div class="service-card-sub">
+            Người có kỹ năng, kinh nghiệm trong việc lựa chọn thực phẩm sẽ giúp
+            bạn.
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="./assets/icon/Cook.svg" />
+          <div class="service-card-title">Nấu ăn gia đình</div>
+          <div class="service-card-sub">
+            Đảm bảo vệ sinh an toàn thực phẩm trong suốt quá trình nấu nướng.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="employees" class="bg-[#0775AA]">
+      <div class="section">
+        <div
+          class="text-[70px] text-white leading-[64px] text-center mb-[27px]"
+        >
+          Đội ngũ nhân viên
+        </div>
+        <div class="mb-[57px] mx-auto bg-white w-[328px] h-[3px]"></div>
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div
+                class="grid grid-cols-3 gap-8"
+                data-target="#myCarousel"
+                data-slide-to="0"
+              >
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image.png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Nguyễn Ngọc Duyên</div>
+                      <div class="employee-hometown">Quê quán: Thanh Hóa</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (1).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Phạm Thị Tính</div>
+                      <div class="employee-hometown">Quê quán: Nghệ An</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (2).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Trần Thị Bình</div>
+                      <div class="employee-hometown">Quê quán: Thái Bình</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Sự hài lòng của bạn chính là động lực để tôi không ngừng cải
+                    thiện dịch vụ của mình.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="grid grid-cols-3 gap-8"
+                data-target="#myCarousel"
+                data-slide-to="1"
+              >
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (1).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Phạm Thị Tính</div>
+                      <div class="employee-hometown">Quê quán: Nghệ An</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image.png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Nguyễn Ngọc Duyên</div>
+                      <div class="employee-hometown">Quê quán: Thanh Hóa</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (2).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Trần Thị Bình</div>
+                      <div class="employee-hometown">Quê quán: Thái Bình</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Sự hài lòng của bạn chính là động lực để tôi không ngừng cải
+                    thiện dịch vụ của mình.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="grid grid-cols-3 gap-8"
+                data-target="#myCarousel"
+                data-slide-to="0"
+              >
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image.png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Nguyễn Ngọc Duyên</div>
+                      <div class="employee-hometown">Quê quán: Thanh Hóa</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (1).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Phạm Thị Tính</div>
+                      <div class="employee-hometown">Quê quán: Nghệ An</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Cam kết mang đến cho bạn không gian sống sạch sẽ, gọn gàng
+                    và thoải mái.
+                  </div>
+                </div>
+                <div class="employee-card">
+                  <div class="flex gap-3">
+                    <img src="./assets/image/image (2).png" alt="" />
+                    <div>
+                      <div class="employee-name">Cô Trần Thị Bình</div>
+                      <div class="employee-hometown">Quê quán: Thái Bình</div>
+                    </div>
+                  </div>
+                  <div class="flex gap-4 mt-4">
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                    <img src="./assets/icon/star.svg" />
+                  </div>
+                  <div class="employee-intro">
+                    Sự hài lòng của bạn chính là động lực để tôi không ngừng cải
+                    thiện dịch vụ của mình.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <div class="dot active item1"></div>
+            <div class="dot item2"></div>
+            <div class="dot item3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="plan" class="section flex flex-col items-center">
+      <div
+        class="text-black text-[70px] leading-[85px] text-center mb-[74px] w-[946px]"
+      >
+        TRẢI NGHIỆM NGAY CÁC GÓI DỊCH VỤ “SIÊU HOT”
+      </div>
+      <div class="grid grid-cols-3 gap-[22px]">
+        <div class="group plan-card">
+          <div class="mb-7">
+            <span class="plan-rate"
+              >159.000 <span class="plan-ratetime">/2h dọn dẹp</span></span
+            >
+          </div>
+          <div class="plan-name">GÓI CƠ BẢN</div>
+          <div class="plan-sum mb-[49px]">2 phòng - 60m2</div>
+          <ul class="plan-detail">
+            <li>Dọn dẹp 2 phòng ngủ</li>
+            <li>Quét bụi và lau tất cả các bề mặt có thể tiếp cận</li>
+            <li>Rửa chén và xếp chén đĩa</li>
+          </ul>
+          <button class="plan-button group-hover:visible">
+            Tham khảo ngay
+          </button>
+        </div>
+        <div class="group plan-card">
+          <div class="mb-7">
+            <span class="plan-rate"
+              >216.000
+              <span class="plan-ratetime">/3h dọn dẹp</span></span
+            >
+          </div>
+          <div class="plan-name">GÓI TIỆN LỢI</div>
+          <div class="plan-sum mb-[49px]">3 phòng - 90m2</div>
+          <ul class="plan-detail">
+            <li>Dọn dẹp 3 phòng ngủ</li>
+            <li>Quét bụi và lau tất cả các bề mặt có thể tiếp cận</li>
+            <li>Nấu ăn theo yêu cầu</li>
+            <li>Rửa chén và xếp chén đĩa</li>
+          </ul>
+          <button class="plan-button group-hover:visible">
+            Tham khảo ngay
+          </button>
+        </div>
+        <div class="group plan-card">
+          <div class="mb-7">
+            <span class="plan-rate"
+              >275.000
+              <span class="plan-ratetime"
+                >/ 4h dọn dẹp
+              </span></span
+            >
+          </div>
+          <div class="plan-name">GÓI CAO CẤP</div>
+          <div class="plan-sum mb-[49px]">4 phòng - 115m2</div>
+          <ul class="plan-detail">
+            <li>Dọn dẹp 4 phòng ngủ</li>
+            <li>Quét bụi và lau tất cả các bề mặt có thể tiếp cận</li>
+            <li>Đi chợ và nấu ăn theo yêu cầu</li>
+            <li>Rửa chén và xếp chén đĩa</li>
+          </ul>
+          <button class="plan-button group-hover:visible">
+            Tham khảo ngay
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="support" class="relative h-[544px] overflow-hidden">
+      <div class="bg-[#F6F4EE] w-full absolute inset-0 -z-20"></div>
+      <img
+        class="w-[921px] absolute inset-y-0 right-0 -z-10"
+        src="./assets/image/decor.png"
+        alt=""
+      />
+      <div class="section h-full py-[85px]">
+        <div class="w-[585px]">
+          <div class="text-[60px] leading-[70px] text-[#334047] mb-[21px]">
+            Chúng tôi luôn sẵn sàng hỗ trợ bạn
+          </div>
+          <div
+            class="font-montserrat-alternates text-[18px] leading-[28px] mb-[49px]"
+          >
+            Khi có bất kỳ thắc mắc gì về dịch vụ, bạn chỉ cần chạm nhẹ, chúng
+            tôi sẽ giải đáp cho bạn.
+          </div>
+        </div>
+        <button class="support-button">Nhận hỗ trợ</button>
+      </div>
+    </div>
+  </body>
+  <div id="footer" class="section grid grid-cols-3 gap-[42px] py-[20px]">
+    <div>
+      <img src="./assets/image/Blue Cleaning Services Logo 2.png" alt="" />
+      <div
+        class="font-montserrat-alternates text-[#333539] text-[20px] leading-[35px] -translate-y-3"
+      >
+        Địa chỉ: 12 Chùa Bộc, Đống Đa, Hà Nội
+        <br />
+        Hotline: 1900 1012
+        <br />
+        Email: support@delitask.com
+      </div>
+    </div>
+    <div class="col-span-2 mt-6 flex flex-col items-center">
+      <div class="text-[#334047] text-[32px] leading-[70px]">
+        Để lại Email để nhận thông tin về các chương trình khuyến mại
+      </div>
+      <div class="relative w-[645px] h-fit mb-[54px]">
+        <input
+          class="font-montserrat text-[18px] w-full border-[#79A1D6] border-2 py-[20px] px-[36px] pr-[170px] rounded-[100px]"
+          placeholder="Nhập Gmail của bạn"
+        />
+        <button
+          class="h-[54px] flex gap-4 items-center btn-primary-2 absolute px-8 top-2 right-2 rounded-[60px]"
+        >
+          GỬI ĐI <img src="./assets/icon/arrow-right.svg" alt="" />
+        </button>
+      </div>
+      <div class="flex gap-[81px]">
+        <div>
+          <div
+            class="font-montserrat-alternates font-bold text-[32px] leading-[35px] opacity-70"
+          >
+            CÔNG TY
+          </div>
+          <ul class="list">
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Trang chủ
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Đội ngũ nhân
+              viên
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Điều khoản sử
+              dụng
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Câu chuyện giúp
+              việc
+            </li>
+            <li><img src="./assets/icon/Expand Arrow.svg" alt="" />Liên hệ</li>
+          </ul>
+        </div>
+        <div>
+          <div
+            class="font-montserrat-alternates font-bold text-[32px] leading-[35px] opacity-70"
+          >
+            DỊCH VỤ
+          </div>
+          <ul class="list">
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" /> Giúp việc nhà
+              theo giờ
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Vệ sinh Sofa -
+              Rèm - Đệm - Thảm
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Đi chợ dụng
+            </li>
+            <li>
+              <img src="./assets/icon/Expand Arrow.svg" alt="" />Nấu ăn gia đình
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#01486A] py-[27px]">
+    <div
+      class="text-center font-montserrat text-white text-[18px] leading-[30px] font-medium"
+    >
+      Copyright © 2024 by DeliTask
+    </div>
+  </div>
+</html>
