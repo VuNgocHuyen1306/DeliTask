@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: #373737;
+  font-family: "Protest Strike", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  box-sizing: border-box;
+}
+@layer components {
+  #header.scrolling-active {
+    @apply shadow-md;
+  }
+  .btn-primary {
+    @apply py-[27px] px-[30px] font-montserrat-alternates bg-primary text-white font-semibold  rounded-[30px] shadow-md hover:to-blue-400 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-75;
+  }
+
+  .btn-primary-2 {
+    @apply text-[14px] leading-[14px] py-3 px-4 font-montserrat-alternates bg-blue-4 text-[#528EAA] font-medium rounded-[10px] shadow-md hover:to-blue-400 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-75;
+  }
+  .menu-item {
+    @apply font-montserrat font-extrabold text-[#121212] text-[14px] leading-[14px] cursor-pointer;
+  }
+  .icon-block {
+    @apply rounded-[30px] bg-white px-8 py-[27px] w-max flex gap-6;
+  }
+  .text-sub {
+    @apply font-montserrat-alternates text-dark-1 text-[20px] leading-[26px] opacity-70;
+  }
+  .text-sub-18 {
+    @apply font-montserrat-alternates text-dark-1 text-[18px] leading-[28px] opacity-70;
+  }
+  .text-title {
+    @apply font-montserrat-alternates text-[#282A2E] text-[24px] leading-[24px] font-bold;
+  }
+  .image-box {
+    @apply rounded-[10px] bg-white p-3;
+  }
+  .image-box img {
+    @apply rounded-[10px];
+  }
+  .btn-icon {
+    @apply grid place-content-center w-[35px] h-[35px] rounded-full bg-[#E8F7FF];
+  }
+  .service-card {
+    @apply bg-[#F4F6FB] shadow-[0px_4px_90px_0px_#00000026] px-10 py-8 flex flex-col items-center gap-8;
+  }
+  .service-card img {
+    @apply w-[75px] h-[75px];
+  }
+  .service-card-title {
+    @apply font-montserrat-alternates text-[#343434] text-[25px] font-bold leading-[33px] text-center;
+  }
+  .service-card-sub {
+    @apply font-montserrat-alternates text-[#343434] text-[16px] leading-[26px] opacity-70 text-center;
+  }
+  .section {
+    @apply min-h-screen container mx-auto py-[106px] xl:px-20;
+  }
+
+  .employee-card {
+    @apply bg-[#F4F6FB] p-8 flex flex-col gap-4 rounded-[32px];
+  }
+  .employee-name {
+    @apply mb-2 font-montserrat-alternates text-[#343434] text-[20px] leading-[24px] font-bold;
+  }
+  .employee-hometown {
+    @apply font-montserrat-alternates text-[#5A717C] text-[16px] leading-[19px];
+  }
+  .employee-intro {
+    @apply italic font-montserrat-alternates text-[#45565F] text-[18px] leading-[32px] font-light;
+  }
+  .plan-card {
+    @apply cursor-pointer w-[390px] hover:bg-[#CAE8FD] bg-[#E3F3FF] py-9 px-5 flex flex-col rounded-[32px];
+  }
+  .plan-rate {
+    @apply text-[#2484B1] font-poppins font-semibold text-[54px] leading-[81px];
+  }
+  .plan-ratetime {
+    @apply font-sora text-[20px] leading-[25px] text-[#5A717C];
+  }
+  .plan-name {
+    @apply font-montserrat-alternates text-[#343434] text-[32px] leading-[39px] font-bold mb-2;
+  }
+  .plan-sum {
+    @apply font-montserrat-alternates text-[#45565F] text-[24px] leading-[32px] font-light;
+  }
+  .plan-detail {
+    @apply pl-5 mb-[49px];
+  }
+  .plan-detail li {
+    @apply mb-[27px] list-disc font-montserrat-alternates text-[#45565F] text-[20px] leading-[32px] font-light;
+  }
+  .plan-button {
+    @apply invisible font-montserrat-alternates bg-[#FFBA18] rounded-[30px] px-4 py-3 w-fit self-center font-normal text-[20px] leading-[24px];
+  }
+  .support-button {
+    @apply font-montserrat-alternates bg-[#FFBA18] rounded-[30px] px-4 py-5 w-fit self-center font-bold text-[24px] leading-[16px];
+  }
+  .list li {
+    @apply flex gap-2 font-montserrat-alternates text-[#333539] text-[20px] leading-[35px] font-medium opacity-70;
+  }
+  .dot {
+    @apply w-8 h-8 rounded-full bg-white cursor-pointer;
+  }
+  .carousel-indicators {
+    @apply !-bottom-20 flex gap-5 justify-center;
+  }
+  .carousel-indicators .active {
+    @apply !w-8 !h-8 !bg-[#29BAF9];
+  }
+}
